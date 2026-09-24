@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato - Daniel</title>
+</head>
+<body>
+
+  <header>
+    <h1>Daniel</h1>
+    <nav>
+      <a href="index.html">inicio</a> |
+      <a href="sobre.html">sobre mim</a> |
+      <a href="projetos.html">projetos</a> |
+      <a href="contato.html">contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>manda uma mensagem</h2>
+      <p>
+        preenche ai embaixo se quiser pedir um orçamento ou só tirar uma dúvida.
+      </p>
+
+      <form action="#" method="post">
+
+        <p>
+          <label for="nome">nome:</label><br>
+          <input type="text" id="nome" name="nome" placeholder="seu nome" required>
+        </p>
+
+        <p>
+          <label for="email">email:</label><br>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </p>
+
+        <p>
+          <label for="data-contato">melhor data pra eu te responder:</label><br>
+          <input type="date" id="data-contato" name="data-contato" required>
+        </p>
+
+        <p>
+          <label for="orcamento">faixa de orçamento (R$):</label><br>
+          <input type="range" id="orcamento" name="orcamento" min="200" max="5000" step="100" value="1000">
+        </p>
+
+        <p>
+          <label for="tipo-projeto">que tipo de projeto:</label><br>
+          <input type="text" id="tipo-projeto" name="tipo-projeto" list="lista-projetos" placeholder="ex: site institucional">
+          <datalist id="lista-projetos">
+            <option value="site institucional">
+            <option value="cardápio digital">
+            <option value="sistema interno">
+            <option value="landing page">
+          </datalist>
+        </p>
+
+        <p>
+          <label for="anexo">anexar alguma referência (se tiver):</label><br>
+          <input type="file" id="anexo" name="anexo">
+        </p>
+
+        <p>
+          <label for="mensagem">mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" placeholder="conta um pouco sobre o que você precisa" required></textarea>
+        </p>
+
+        <p>
+          <button type="submit">enviar</button>
+        </p>
+
+      </form>
+    </section>
+
+    <section>
+      <h2>prefere ouvir</h2>
+      <p>gravei um audiozinho curto explicando como funciona quando eu pego um projeto novo</p>
+      <audio controls>
+        <source src="../audio/apresentacao.ogg" type="audio/ogg">
+        seu navegador não toca esse áudio
+      </audio>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Daniel - <time datetime="2026">2026</time></p>
+  </footer>
+
+</body>
+</html>
